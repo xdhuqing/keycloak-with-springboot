@@ -39,6 +39,7 @@ public class HelloService {
         // 但传递的数据类型有限，不能像这个这么灵活，可以传递多种不同数据类型的参数
         LinkedMultiValueMap body=new LinkedMultiValueMap();
         body.add("client_id", baseConfig.getClientId());
+        body.add("client_secret", baseConfig.getClientSecret());
         body.add("refresh_token", securityContext.getRefreshToken());
 
         //设置请求header 为 APPLICATION_FORM_URLENCODED
