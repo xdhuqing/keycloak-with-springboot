@@ -19,7 +19,7 @@ keycloak:
 #  bearer-only: true
 #  use-resource-role-mappings: false
   cors: true
-  public-client: true
+#  public-client: true
   security-constraints:
     - authRoles:
         - ROLE_CUSTOMER
