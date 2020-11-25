@@ -23,6 +23,7 @@ keycloak:
   security-constraints:
     - authRoles:
         - ROLE_CUSTOMER
+        - ROLE_ADMIN
       securityCollections:
         - name: customer
           patterns:
